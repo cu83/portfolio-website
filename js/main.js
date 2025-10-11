@@ -40,3 +40,16 @@ window.addEventListener("scroll", function () {
 AOS.init({
   once: true,
 });
+
+// Contact Directory
+window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                emailjs.sendForm('service_q5m1i3s', 'template_qkksjle', this)
+                    .then(function() {
+                        alert('Email sent successfully!');
+                    }, function(error) {
+                        alert('Failed to send email: ' + error);
+                    });
+            });
+        }

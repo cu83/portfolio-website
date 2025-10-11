@@ -13,6 +13,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("ax5AtUQEDecDDZ4Oq");
+        })();
+    </script>
   </head>
 
   <body>
@@ -94,7 +100,7 @@
               professionals the insight and tools to more efficiently plan buildings 
               and infrastructure.
             </p>
-            <a href="./BIM.html" target="_blank" class="btn btn-white" style="margin-top: 20px;">Projects</a>
+            <a href="./BIM.html" class="btn btn-white" style="margin-top: 20px;">Projects</a>
           </div>
 
           <div class="service-card" data-aos="fade-down">
@@ -117,7 +123,7 @@
               such as learning, problem-solving, decision-making, and understanding 
               language.
             </p>
-            <a href="./AI.html" target="_blank" class="btn btn-white" style="margin-top: 20px;">Projects</a>
+            <a href="./AI.html" class="btn btn-white" style="margin-top: 20px;">Projects</a>
           </div>
         </div>
       </div>
@@ -213,7 +219,7 @@
           </p>
         </div>
 
-        <form data-aos="zoom-in">
+        <form data-aos="zoom-in" id="contact-form">
           <div class="input-box">
             <input type="text" name="name" placeholder="Full Name" required />
             <input
@@ -232,11 +238,12 @@
             placeholder="Your Message"
             required
           ></textarea>
+          <input type="submit" value="Send Message" class="btn btn-red" 
+          style="background: var(--secondary-accent);
+                border: 2px solid var(--secondary-accent);
+                color: var(--white-color);
+                transition: all 0.3s ease-in;">
         </form>
-
-        <div class="contact-button" data-aos="fade-up">
-          <a href="#!" class="btn btn-red">Send Message</a>
-        </div>
       </div>
     </section>
 
